@@ -91,7 +91,6 @@ ROOT_URLCONF = 'perfectiontire.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'perfectiontire.wsgi.application'
 
-
 BASE_AND_LIBRARY_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -122,6 +121,11 @@ AUTHENTICATION_BACKENDS = (
 
 LOGIN_REDIRECT_URL = '/'
 #AUTH_PROFILE_MODULE = 'profiles.UserProfile'
+
+# Sentry
+RAVEN_CONFIG = {
+    'dsn': SENTRY_DSN
+}
 
 # Logging
 LOGGING = {

@@ -15,5 +15,5 @@ from raven.middleware import Sentry
 # Static file management
 application = Cling(get_wsgi_application())
 
-client = Client(settings.SENTRY_DSN)
-application = Sentry(application, client=client)
+#client = Client(settings.SENTRY_DSN)
+#application = Sentry(application, client=client)
