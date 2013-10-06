@@ -20,34 +20,44 @@ var PRODUCT_DATA = [
         ],
         wheels: [
             {
-                brand: 'AKUZA'
+                brand: 'AKUZA',
+                image: 'img/wheel_brands/akuza.png'
             },
             {
-                brand: 'BALLISTIC'
+                brand: 'BALLISTIC',
+                image: 'img/wheel_brands/ba;;ostoc.png'
             },
             {
-                brand: 'BOSS'
+                brand: 'BOSS',
+                image: 'img/wheel_brands/boss.png'
             },
             {
-                brand: 'Incubus'
+                brand: 'Incubus',
+                image: 'img/wheel_brands/incubus.png'
             },
             {
-                brand: 'KMC'
+                brand: 'KMC',
+                image: 'img/wheel_brands/kmc.png'
             },
             {
-                brand: 'LIQUIDMETAL'
+                brand: 'LIQUIDMETAL',
+                image: 'img/wheel_brands/liquid-metal.png'
             },
             {
-                brand: 'Motegi Racing'
+                brand: 'Motegi Racing',
+                image: 'img/wheel_brands/motegi.png'
             },
             {
-                brand: 'MSR'
+                brand: 'MSR',
+                image: 'img/wheel_brands/MSR.png'
             },
             {
-                brand: 'REV'
+                brand: 'REV',
+                image: 'img/wheel_brands/rev.png'
             },
             {
-                brand: 'Sendel'
+                brand: 'Sendel',
+                image: 'img/wheel_brands/sendel.png'
             }
         ]
     }
