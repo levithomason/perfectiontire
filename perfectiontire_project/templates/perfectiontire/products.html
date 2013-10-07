@@ -11,9 +11,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12" ng-controller="ProductPageController">
-                <div id="isotope_container" class="isotope">
+                <div id="isotope_container" class="isotope clearfix">
                     {% verbatim %}
-                        <div ng-repeat="product in productData" class="isotope-item {{ product.type }}">
+                        <div ng-repeat="product in productData" class="isotope-item" data-category="{{ product.type }}">
 
                             {{ product|json }}
                         </div>
