@@ -34,7 +34,7 @@
                         <div ng-repeat="product in productData" class="isotope-item {{ product.type }} {{ product.category }}">
 		                    <div class="panel">
 		                    	<div class="panel-body">
-									<img src="../../static/img/{{ product.type }}/{{ product.brand }}/{{ product.image }}" class="product_image">
+									<img src="{% endverbatim %}{% static 'img/' %}{% verbatim %}{{ product.type }}/{{ product.brand }}/{{ product.image }}" class="product_image">
 		                    	</div>
 		                    	<div class="panel-footer">
 									<h3>{{ product.name }}</h3>
