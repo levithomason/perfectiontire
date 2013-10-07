@@ -16,14 +16,13 @@ angular.module('app', [])
 function ProductPageController($scope) {
     var container = $('#isotope_container');
 
-	$scope.filterType = ".tires";
 	$scope.filterCategory = "";
 
     $scope.productData = PRODUCT_DATA;
 
 	// isotope filtering
     $scope.filterIsotope = function() {
-    	var filters = $scope.filterType + $scope.filterCategory;
+    	var filters = $scope.filterCategory;
         console.log(filters);
         container.isotope({
         	filter: filters,
