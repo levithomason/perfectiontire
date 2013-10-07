@@ -13,13 +13,14 @@
             <div class="col-xs-12" ng-controller="ProductPageController">
                 <p>Product type</p>
                 <div class="btn-group btn-group-lg">
-                    <button class="btn btn-default" ng-click="filterIsotope('.isotope-item')" ng-class="{'btn-primary': filterType == '.isotope-item'}">All</button>
-                    <button class="btn btn-default" ng-click="filterIsotope('.tire')" ng-class="{'btn-primary': filterType == '.tire'}">Tires</button>
-                    <button class="btn btn-default" ng-click="filterIsotope('.wheel')" ng-class="{'btn-primary': filterType == '.wheel'}">Wheels</button>
+                    <button class="btn btn-default" ng-click="filterTypeReset()" ng-class="filterActive('*')">All</button>
+                    <button class="btn btn-default" ng-click="filterTypeSet('tire')" ng-class="filterActive('tire')">Tires</button>
+                    <button class="btn btn-default" ng-click="filterTypeSet('wheel')" ng-class="filterActive('wheel')">Wheels</button>
                 </div>
                 <div class="btn-group btn-group-lg">
-                    <button class="btn btn-default" ng-click="filterIsotope('.tire')" ng-class="{'btn-primary': filterType == '.high-performance'}">High Performance</button>
-                    <button class="btn btn-default" ng-click="filterIsotope('.wheel')" ng-class="{'btn-primary': filterType == '.ultra-high-performance'}">Ultra High Performance</button>
+                    <button class="btn btn-default" ng-click="filterCategoryReset()" ng-class="filterActive('*')">All</button>
+                    <button class="btn btn-default" ng-click="filterCategorySet('high-performance')" ng-class="filterActive('high-performance')">High Performance</button>
+                    <button class="btn btn-default" ng-click="filterCategorySet('ultra-high-performance')" ng-class="filterActive('ultra-high-performance')">Ultra High Performance</button>
                 </div>
             </div>
         </div>
@@ -28,12 +29,16 @@
             <div class="col-md-12" ng-controller="ProductPageController">
                 <div id="isotope_container" class="isotope clearfix">
                     {% verbatim %}
-                        <div ng-repeat="product in productData" class="isotope-item {{ product.type }}">
-							<div class="product-imaage">
-								<img src="../../static/img/{{ product.type }}/{{ product.brand }}/{{ product.image }}">
-							</div>
-	                        {{ product|json }}
-                        </div>
+                        <div ng-repeat="product in productData" class="isotope-item {{ product.type }} {{ product.category }}">
+		                    <div class="panel">
+		                    	<div class="panel-body">
+									<img src="../../static/img/{{ product.type }}/{{ product.brand }}/{{ product.image }}" class="product_image">
+		                    	</div>
+		                    	<div class="panel-footer">
+									<h3>{{ product.name }}</h3>
+		                    	</div>
+		                    </div>
+                		</div>
                     {% endverbatim %}
                 </div>
             </div>

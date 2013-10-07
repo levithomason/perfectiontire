@@ -16,12 +16,19 @@ angular.module('app', [])
 function ProductPageController($scope) {
     var container = $('#isotope_container');
 
-    $scope.filterType = '.isotope-item';
+	$scope.filterType = ".tires";
+	$scope.filterCategory = "";
+
     $scope.productData = PRODUCT_DATA;
 
-    $scope.filterIsotope = function(selector) {
-        $scope.filterType = selector;
-        container.isotope({ filter: selector });
+	// isotope filtering
+    $scope.filterIsotope = function() {
+    	var filters = $scope.filterType + $scope.filterCategory;
+        console.log(filters);
+        container.isotope({
+        	filter: filters,
+        	layoutMode : 'cellsByRow'
+    	});
         container.isotope('reLayout');
     };
 
@@ -33,4 +40,32 @@ function ProductPageController($scope) {
     $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
         $scope.initIsotope();
     });
+
+	// Tilter terms
+	$scope.filterTypeSet = function(selector) {
+		$scope.filterType = "." + selector;
+		$scope.filterIsotope();
+    };
+	$scope.filterTypeReset = function(selector) {
+		$scope.filterType = '';
+		$scope.filterIsotope();
+    };
+
+	$scope.filterCategorySet = function(selector) {
+		$scope.filterCategory = "." + selector;
+		$scope.filterIsotope();
+    };
+	$scope.filterCategoryReset = function() {
+		$scope.filterCategory = "";
+		$scope.filterIsotope();
+    };
+	$scope.filterInit = function() {
+
+	}
+
+    // button classes
+    $scope.filterActive = function(selector) {
+
+    };
+
 }

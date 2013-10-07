@@ -3,20 +3,15 @@
   overflow: hidden;
 }
 .isotope-item {
-  overflow: hidden;
-  position: relative;
   float: left;
-  color: #efefef;
-  border-radius: 12px;
-  margin: 20px;
-  padding: 20px;
+  margin: 10px;
+}
+.isotope-item .panel-body {
   width: 250px;
-  height: 250px;
-  border: 8px solid rgba(255, 255, 255, 0.9);
+  height: 150px;
+  overflow: hidden;
 }
-.isotope-item.tire {
-  background-color: rgba(100, 0, 0, 0.35);
-}
-.isotope-item.wheel {
-  background-color: rgba(0, 0, 100, 0.35);
+.isotope-item .product_image {
+  width: 120%;
+  float: right;
 }
