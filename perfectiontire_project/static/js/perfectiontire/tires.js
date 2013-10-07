@@ -1,24 +1,97 @@
 var PRODUCT_DATA = [
-    // Tires
+    // Tires - Ultra High Performance
     {
         type: 'tire',
         brand: 'Cooper',
-        products: ['Zeon RS3', 'Zeon RS3-A', 'Zeon RS3-S', 'Zeon XST-A']
+        category: 'Ultra High Performance',
+        name: 'Zeon RS3'
+    },
+    {
+        type: 'tire',
+        brand: 'Cooper',
+        category: 'Ultra High Performance',
+        name: 'Zeon RS3-A'
+    },
+    {
+        type: 'tire',
+        brand: 'Cooper',
+        category: 'Ultra High Performance',
+        name: 'Zeon RS3-S'
+    },
+    {
+        type: 'tire',
+        brand: 'Cooper',
+        category: 'Ultra High Performance',
+        name: 'Zeon XST-A'
+    },
+
+    {
+        type: 'tire',
+        brand: 'Nexen',
+        category: 'Ultra High Performance',
+        name: 'N5000'
     },
     {
         type: 'tire',
         brand: 'Nexen',
-        products: ['N5000', 'N7000']
+        category: 'Ultra High Performance',
+        name: 'N7000'
     },
     {
         type: 'tire',
         brand: 'Hercules',
-        products: ['Raptis TR1', 'Raptis VR1', 'Raptis WR1']
+        category: 'Ultra High Performance',
+        name: 'Raptis TR1'
+    },
+    {
+        type: 'tire',
+        brand: 'Hercules',
+        category: 'Ultra High Performance',
+        name: 'Raptis VR1'
+    },
+    {
+        type: 'tire',
+        brand: 'Hercules',
+        category: 'Ultra High Performance',
+        name: 'Raptis WR1'
     },
     {
         type: 'tire',
         brand: 'Fuzion',
-        products: ['ZRI']
+        category: 'Ultra High Performance',
+        name: 'ZRI'
+    },
+
+    // Tires - High Performance
+    {
+        type: 'tire',
+        brand: 'Cooper',
+        category: 'High Performance',
+        name: 'Zeon ZPT'
+    },
+    {
+        type: 'tire',
+        brand: 'Cooper',
+        category: 'High Performance',
+        name: 'Lifeliner GLS'
+    },
+    {
+        type: 'tire',
+        brand: 'Nexen',
+        category: 'High Performance',
+        name: 'CP641'
+    },
+    {
+        type: 'tire',
+        brand: 'Fuzion',
+        category: 'High Performance',
+        name: 'HRI'
+    },
+    {
+        type: 'tire',
+        brand: 'Starfire',
+        category: 'High Performance',
+        name: 'RS-C 2.0'
     },
 
     // Wheels
