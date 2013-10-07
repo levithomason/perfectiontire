@@ -4,7 +4,7 @@ var PRODUCT_DATA = [
         type: 'tire',
         brand: 'Cooper',
         category: 'Ultra High Performance',
-        name: 'Zeon RS3'
+        name: 'Zeon RS3',
         image: 'Zeon RS3.png'
     },
     {
@@ -47,28 +47,28 @@ var PRODUCT_DATA = [
         type: 'tire',
         brand: 'Hercules',
         category: 'Ultra High Performance',
-        name: 'Raptis TR1'
+        name: 'Raptis TR1',
         image: 'hercules-raptis-tr1'
     },
     {
         type: 'tire',
         brand: 'Hercules',
         category: 'Ultra High Performance',
-        name: 'Raptis VR1'
+        name: 'Raptis VR1',
         image: ''
     },
     {
         type: 'tire',
         brand: 'Hercules',
         category: 'Ultra High Performance',
-        name: 'Raptis WR1'
+        name: 'Raptis WR1',
         image: 'hercules-raptis-vr1.png'
     },
     {
         type: 'tire',
         brand: 'Fuzion',
         category: 'Ultra High Performance',
-        name: 'ZRI'
+        name: 'ZRI',
         image: 'Fuzion-Zri.png'
     },
 
@@ -77,35 +77,35 @@ var PRODUCT_DATA = [
         type: 'tire',
         brand: 'Cooper',
         category: 'High Performance',
-        name: 'Zeon ZPT'
+        name: 'Zeon ZPT',
         image: 'ZEON ZPT.png'
     },
     {
         type: 'tire',
         brand: 'Cooper',
         category: 'High Performance',
-        name: 'Lifeliner GLS'
+        name: 'Lifeliner GLS',
         image: 'LIFELINER-GLS.png'
     },
     {
         type: 'tire',
         brand: 'Nexen',
         category: 'High Performance',
-        name: 'CP641'
+        name: 'CP641',
         image: ''
     },
     {
         type: 'tire',
         brand: 'Fuzion',
         category: 'High Performance',
-        name: 'HRI'
+        name: 'HRI',
         image: 'fuzion-hri.png'
     },
     {
         type: 'tire',
         brand: 'Starfire',
         category: 'High Performance',
-        name: 'RS-C 2.0'
+        name: 'RS-C 2.0',
         image: 'rs-c2.png'
     },
 
