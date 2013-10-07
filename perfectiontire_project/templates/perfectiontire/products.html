@@ -1,10 +1,24 @@
 {% extends "base.html" %}
 
+{% load staticfiles %}
+
+{% block extra_javascript %}
+    <script type="text/javascript" src="{% static "js/perfectiontire/tires.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/perfectiontire/productPage.js" %}"></script>
+{% endblock %}
+
 {% block content %}
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" ng-controller="ProductPageController">
+                <div id="isotope_container" class="isotope">
+                    {% verbatim %}
+                        <div ng-repeat="product in productData" class="isotope-item {{ product.type }}">
 
+                            {{ product|json }}
+                        </div>
+                    {% endverbatim %}
+                </div>
             </div>
         </div>
     </div>
