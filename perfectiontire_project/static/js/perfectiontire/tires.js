@@ -48,14 +48,14 @@ var PRODUCT_DATA = [
         brand: 'Hercules',
         category: 'Ultra High Performance',
         name: 'Raptis TR1',
-        image: 'hercules-raptis-tr1'
+        image: 'hercules-raptis-tr1.png'
     },
     {
         type: 'tire',
         brand: 'Hercules',
         category: 'Ultra High Performance',
         name: 'Raptis VR1',
-        image: ''
+        image: 'hercules-raptis-vr1.png'
     },
     {
         type: 'tire',
@@ -92,7 +92,7 @@ var PRODUCT_DATA = [
         brand: 'Nexen',
         category: 'High Performance',
         name: 'CP641',
-        image: ''
+        image: 'CP641.png'
     },
     {
         type: 'tire',
