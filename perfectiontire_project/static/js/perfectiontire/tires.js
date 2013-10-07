@@ -5,21 +5,21 @@ var PRODUCT_DATA = [
         brand: 'Cooper',
         category: 'ultra-high-performance',
         name: 'Zeon RS3',
-        image: 'Zeon RS3.png'
+        image: 'ZEON RS3.png'
     },
     {
         type: 'tire',
         brand: 'Cooper',
         category: 'ultra-high-performance',
         name: 'Zeon RS3-A',
-        image: 'Zeon RS3-A.png'
+        image: 'ZEON RS3-A.png'
     },
     {
         type: 'tire',
         brand: 'Cooper',
         category: 'ultra-high-performance',
         name: 'Zeon RS3-S',
-        image: 'Zeon RS3-S.png'
+        image: 'ZEON RS3-S.png'
     },
     {
         type: 'tire',
