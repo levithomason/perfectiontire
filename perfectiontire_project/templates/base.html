@@ -1,0 +1,20 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perfection Tire</title>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+
+    <script src="{% static "js/bootstrap.js" %}"></script>
+    <script src="{% static "js/jquery.isotope.js" %}"></script>
+    <script src="{% static "js/jquery-1.10.2.min.js" %}"></script>
+    <script src="{% static "js/jquery-1.10.2.min.map" %}"></script>
+
+    <script src="{% static "js/tires.js" %}"></script>
+    <script src="{% static "js/productPage.js" %}"></script>
+</body>
+</html>
