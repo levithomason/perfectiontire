@@ -1,5 +1,6 @@
 .isotope {
   position: relative;
+  overflow: hidden;
 }
 .isotope-item {
   overflow: hidden;
