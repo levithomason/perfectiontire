@@ -13,6 +13,7 @@
             <div class="col-xs-12" ng-controller="ProductPageController">
                 <p>Product type</p>
                 <div class="btn-group btn-group-lg">
+                    <button class="btn btn-default" ng-click="filterIsotope('.isotope-item')" ng-class="{'btn-primary': filterType == '.isotope-item'}">All</button>
                     <button class="btn btn-default" ng-click="filterIsotope('.tire')" ng-class="{'btn-primary': filterType == '.tire'}">Tires</button>
                     <button class="btn btn-default" ng-click="filterIsotope('.wheel')" ng-class="{'btn-primary': filterType == '.wheel'}">Wheels</button>
                 </div>

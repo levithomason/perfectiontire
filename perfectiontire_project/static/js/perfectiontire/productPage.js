@@ -16,7 +16,7 @@ angular.module('app', [])
 function ProductPageController($scope) {
     var container = $('#isotope_container');
 
-    $scope.filterType = '.tire';
+    $scope.filterType = '.isotope-item';
     $scope.productData = PRODUCT_DATA;
 
     $scope.filterIsotope = function(selector) {
