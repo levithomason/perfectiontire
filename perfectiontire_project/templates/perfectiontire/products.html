@@ -10,11 +10,15 @@
 {% block content %}
     <div class="container">
         <div class="row">
-            <div class="col-md-12" ng-controller="ProductPageController">
+            <div class="col-xs-12" ng-controller="ProductPageController">
                 <p>Product type</p>
                 <div class="btn-group btn-group-lg">
                     <button class="btn btn-default" ng-click="filterIsotope('.tire')" ng-class="{'btn-primary': filterType == '.tire'}">Tires</button>
                     <button class="btn btn-default" ng-click="filterIsotope('.wheel')" ng-class="{'btn-primary': filterType == '.wheel'}">Wheels</button>
+                </div>
+                <div class="btn-group btn-group-lg">
+                    <button class="btn btn-default" ng-click="filterIsotope('.tire')" ng-class="{'btn-primary': filterType == '.high-performance'}">High Performance</button>
+                    <button class="btn btn-default" ng-click="filterIsotope('.wheel')" ng-class="{'btn-primary': filterType == '.ultra-high-performance'}">Ultra High Performance</button>
                 </div>
             </div>
         </div>
@@ -24,12 +28,16 @@
                 <div id="isotope_container" class="isotope clearfix">
                     {% verbatim %}
                         <div ng-repeat="product in productData" class="isotope-item {{ product.type }}">
-
-                            {{ product|json }}
+							<div class="product-imaage">
+								<img src="../../static/img/{{ product.type }}/{{ product.brand }}/{{ product.image }}">
+							</div>
+	                        {{ product|json }}
                         </div>
                     {% endverbatim %}
                 </div>
             </div>
         </div>
+
+
     </div>
 {% endblock %}
